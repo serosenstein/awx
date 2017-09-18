@@ -3,3 +3,5 @@
   tasks:
     - name: Restarting ntpd Services
       service: name=ntpd state=restarted
+    - name: Restarting ntp Services
+      service: name=ntp state=restarted
