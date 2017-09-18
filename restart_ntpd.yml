@@ -1,0 +1,5 @@
+---
+- hosts: "{{ variable_host | default('all') }}"
+  tasks:
+    - name: Restarting ntpd Services
+      service: name=ntpd state=restarted
